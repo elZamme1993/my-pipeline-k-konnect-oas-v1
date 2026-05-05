@@ -1,0 +1,1 @@
+openssl x509 -noout -fingerprint -sha1 -in test.crt | sed 's/.*=//;s/://g' | tr '[:upper:]' '[:lower:]'
